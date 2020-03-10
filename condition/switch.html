@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //사용자에게 국어, 영어, 수학점수를 입력 받아 평균을 구한 뒤
+      //매우잘함9, 잘함8, 우수7, 보통6, 노력요함5 출력
+      let kor = Number(prompt("국어점수를 입력해주세요"));
+      let eng = Number(prompt("영어점수를 입력해주세요"));
+      let mat = Number(prompt("수학점수를 입력해주세요"));
+      //평균구하기
+      let avg = (kor + eng + mat) / 3;
+      //switch
+      switch (parseInt(avg / 10)) {
+        case 9:
+          document.body.innerText = "매우잘함";
+          break;
+        case 8:
+          document.body.innerText = "잘함";
+          break;
+        case 7:
+          document.body.innerText = "우수";
+          break;
+        case 6:
+          document.body.innerText = "보통";
+          break;
+        case 5:
+          document.body.innerText = "노력요함";
+          break;
+      }
+    </script>
+  </body>
+</html>

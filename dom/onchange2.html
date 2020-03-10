@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <style>
+      select {
+        font-size: 40px;
+      }
+    </style>
+    <title>Document</title>
+  </head>
+  <body>
+    <form action="">
+      <select name="fruits" id="" onchange="fruits_select()">
+        <option value="사과">사과</option>
+        <option value="바나나">바나나</option>
+        <option value="수박">수박</option>
+        <option value="오렌지">오렌지</option>
+        <option value="망고">망고</option>
+      </select>
+    </form>
+    <script>
+      function fruits_select() {
+        // alert("fruits() 호출");
+        //선택된 값을 alert창으로 띄우기
+        let fruit = document.querySelector("select");
+        alert(fruit.value);
+      }
+    </script>
+  </body>
+</html>

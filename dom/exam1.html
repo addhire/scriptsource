@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="ex">여기는 DIV 영역입니다.</div>
+    <div>
+      <a href="#" onclick="get()">div 요소 내용 출력하기</a>
+    </div>
+    <div><a href="#" onclick="set()">div 요소 내용 변경하기</a></div>
+    <script>
+      let ex = document.getElementById("ex");
+
+      function get() {
+        //id가 ex인 영역의 내용 가져오기
+        console.log(ex.innerText);
+      }
+      function set() {
+        //id가 ex인 영역의 내용 변경하기
+        ex.innerText = "내용 변경 굿";
+      }
+    </script>
+  </body>
+</html>

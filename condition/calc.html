@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div>
+      <h1>사칙연산 계산기</h1>
+    </div>
+    <div>
+      <input type="text" name="num1" id="num1" />
+      <select name="op" id="op">
+        <option value="+">+</option>
+        <option value="-">-</option>
+        <option value="*">*</option>
+        <option value="/">/</option>
+      </select>
+      <input type="text" name="num2" id="num2" value="30" />
+      <!-- #1. 온클릭시 포룰 함수 호출-->
+      <input type="button" value="계산" onclick="fourRules()" />
+    </div>
+    <div>
+      <input type="text" name="result" id="result" readonly />
+    </div>
+    <script>
+      function fourRules() {
+        //계산버튼을 클릭하면 사용자가 입력한 숫자 가져오기.
+        //--
+        // #2. id의 value값을 받아서 변수에 담아줌. document가 그냥 하나의 객체로 쓰임???/////
+        let num1 = Number(document.getElementById("num1").value); // 숫자 형태로 바꿔줌.
+        let num2 = Number(document.getElementById("num2").value);
+        let op = document.getElementById("op");
+        // console.log(num1);
+        // console.log(num1.value);
+        // console.log(num2.value);
+        // console.log(op.value);
+        let result;
+        switch (op.value) {
+          case "+":
+            result = num1 + num2;
+            break;
+          case "-":
+            result = num1 - num2;
+            break;
+          case "*":
+            result = num1 * num2;
+            break;
+          case "/":
+            result = num1 / num2;
+            break;
+        }
+        console.log(result);
+        // #3. 그 결과값인 result를 getElementById("result").value에 담아줌.
+        document.getElementById("result").value = result;
+      }
+    </script>
+  </body>
+</html>

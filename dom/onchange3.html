@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form action="">
+      <div>
+        <input
+          type="radio"
+          name="gender"
+          onchange="gender_select()"
+          id="male"
+          value="남"
+        />
+        <label for="female">남</label>
+        <input
+          type="radio"
+          name="gender"
+          onchange="gender_select()"
+          id="female"
+          value="여"
+        />
+        <label for="female">여</label>
+      </div>
+    </form>
+    <script>
+      function gender_select() {
+        //사용자가 선택한 성별 가져오기
+        let gender11 = document.querySelector("[name='gender']:checked");
+        alert(gender11.value);
+      }
+    </script>
+  </body>
+</html>

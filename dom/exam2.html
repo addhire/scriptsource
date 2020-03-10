@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+  </head>
+  <body>
+    <img src="dog.jpg" alt="강아지" />
+    <button type="button" onclick="changeIMG()">이미지변경</button>
+    <script>
+      function changeIMG() {
+        //버튼이 클릭시 이미지 변경해주기
+        let img = document.querySelector("img");
+        img.src = "hadoop.jpg";
+        img.alt = "하둡";
+      }
+    </script>
+  </body>
+</html>

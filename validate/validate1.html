@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let string = "Javasciprt jQuery Ajax";
+      const regexp1 = new RegExp("Ajax"); //정규표현식에서 사용하는 1번. 나는 얘가 있는지 확인해볼거야.
+      console.log("--- exec ---");
+      console.log(regexp1.exec(string)); // 위치까지 찾아줌.
+      console.log("----------");
+      console.log("--- text ---");
+      console.log(regexp1.test(string)); // 있는지 없는지 여부만 알려줌.
+      console.log("----------");
+      console.log("--- match ---");
+      console.log(string.match(regexp1));
+      console.log("----------");
+      console.log("--- search ---");
+      console.log(string.search(regexp1));
+      console.log("----------");
+    </script>
+  </body>
+</html>

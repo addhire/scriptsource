@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+  </head>
+  <body>
+    <p onclick="changeStyle()">
+      This is a paragraph
+    </p>
+    <script>
+      function changeStyle() {
+        //p태그 안 문자 스타일 변경하기
+        let aa = document.querySelector("p");
+        //색상, 크기, 이탤릭, 글꼴 변경
+        aa.style.color = "blue";
+        aa.style.border = "1px solid red";
+        aa.style.padding = "10px";
+        aa.style.fontStyle = "italic";
+      }
+    </script>
+  </body>
+</html>

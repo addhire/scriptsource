@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //사용자로부터 숫자를 입력받아 양수,0,음수인지를 구분하는 프로그램을 작성해보자.
+      let num = Number(prompt("숫자를 입력해주세요", "숫자")); //프롬프트가 창 띄워줌.
+      //Number는 파이썬의 int개념. 숫자로 바꿔줌.
+      if (num > 0) {
+        console.log("양수"); //아래줄만 써도 됨. 화면만 띄울 거면.
+        document.body.innerText = "양수";
+      } else if (num === 0) {
+        console.log("0");
+        document.body.innerText = "0";
+      } else {
+        console.log("음수");
+        document.body.innerText = "음수";
+      }
+    </script>
+  </body>
+</html>

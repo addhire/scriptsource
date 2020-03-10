@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let msg = "";
+      for (let i = 0; i < 10; i++) {
+        if (i == 3) break;
+        msg = msg + i + "<br>";
+        document.body.innerHTML = msg;
+        // 태그자체의 의미를 쓸거면 innerHtml, 태그를 표시하고 싶으면 innerText
+      }
+    </script>
+  </body>
+</html>

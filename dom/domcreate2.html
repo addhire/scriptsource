@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+  </head>
+  <body></body>
+  <script>
+    //문서가 로드되면 body 안에 img 태그를 생성한 후 넣기
+    window.onload = function() {
+      // <img src = "파일명" alt="강아지"/>
+      let img = document.createElement("img");
+      img.src = "dog.jpg";
+      img.alt = "강아지";
+      document.body.append(img);
+    };
+  </script>
+</html>

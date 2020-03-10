@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1 id="header1">Header1</h1>
+    <h2 id="header2">Header2</h2>
+    <script>
+      let h1 = document.getElementById("header1");
+      console.log(h1.value); //undefined
+      console.log(h1.innerText);
+      let h2 = document.getElementById("header2");
+      //   console.log(h2);
+      console.log(h2.innerText);
+      h2.innerText = "가나다라마바사()"; //Header2가 나올 자리를 바꿔버림
+    </script>
+  </body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // const result = add(3, 5);
+      //   document.body.innerText = result;
+
+      //    선언적 함수
+      //   function add(a, b) {
+      //     return a + b;
+      //   }
+
+      //익명함수
+      //   const result = function(a, b) {
+      //     return a + b;
+      //   };
+      //   document.body.innerText = result(5, 8);
+
+      //기명함수
+      const result = function add(a, b) {
+        return a + b;
+      };
+      document.body.innerText = result(5, 8);
+      document.body.innerText = add(5, 8); //이건 에러남. 변수명으로 해야함.
+    </script>
+  </body>
+</html>

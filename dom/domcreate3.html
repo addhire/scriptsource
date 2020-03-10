@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+  </head>
+  <body></body>
+  <script>
+    //문서가 로드되면 body 안에 ul과 li태그를 생성한 후 문자넣기
+    window.onload = function() {
+      // 익명함수
+      // 태그 생성하기
+      let output = "<ul>";
+      output += "<li>JAVASCRIPT</li>";
+      output += "<li>CSS</li>";
+      output += "<li>JQUERY</li>";
+      output += "</ul>";
+      // document.body.append(output);
+      // document.body.innerText = output;
+      document.body.innerHTML = output;
+      // 원래 정식은 1,2번이지만 3번처럼 innerHTML 써서 태그로 인식하게 만들어서도 가능.
+    };
+  </script>
+</html>

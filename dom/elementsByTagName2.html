@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+  </head>
+  <body>
+    <ul>
+      <li>List item1</li>
+      <li>List item2</li>
+      <li>List item3</li>
+      <li>List item4</li>
+    </ul>
+    <ul>
+      <li>List item5</li>
+      <li>List item6</li>
+      <li>List item7</li>
+      <li>List item8</li>
+    </ul>
+    <div id="result"></div>
+    <script>
+      let ulList = document.getElementsByTagName("ul");
+      console.log(ulList);
+
+      let secondUlChildren = ulList[1].children;
+      console.log(ulList[1].children);
+      console.log(secondUlChildren.length);
+
+      let result = document.getElementById("result");
+      for (let i = 0; i < secondUlChildren.length; i++) {
+        //result.append(secondUlChildren[i].innerText + " ");
+        result.append(secondUlChildren[i].firstChild.data + " ");
+      }
+    </script>
+  </body>
+</html>

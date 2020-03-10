@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // 함수적 선언
+      function callTenTimes(callback) {
+        for (let i = 0; i < 10; i++) {
+          callback();
+        }
+      }
+      //익명함수
+      const callback = function() {
+        alert("함수호출");
+      };
+      //함수 호출. 시작구문.        18행 함수 자체를 매개변수로 12행에 넘김.
+      callTenTimes(callback);
+    </script>
+  </body>
+</html>

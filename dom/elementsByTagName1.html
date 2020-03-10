@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+  </head>
+  <body>
+    <ul>
+      <li>List item1</li>
+      <li>List item2</li>
+      <li>List item3</li>
+      <li>List item4</li>
+    </ul>
+    <script>
+      let ulList = document.getElementsByTagName("ul");
+      console.log(ulList);
+      console.log(ulList[0].children);
+      console.log(ulList[0].innerText);
+      console.log(ulList[0].childNodes);
+      console.log(ulList[0].childNodes[1]);
+      ulList[0].childNodes[1].innerText = "tag Name 안녕하세요()()";
+    </script>
+  </body>
+</html>
